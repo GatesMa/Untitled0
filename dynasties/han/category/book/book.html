@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最真实的汉朝</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head wrapper">
+        <div class=" fl"><a href=""><img class="logo" src="../../../../img/book/logo.png" /></a></div>
+        <div class=" nav fr"><a href="../../../../index.html">首页</a><a href="../../../../about/about.html">关于我们</a><a href="http://gatesma.cn:3030">在线交流</a><a href="../../../../contact/contact.html">联系我们</a></div>
+    </div>
+</header>
+
+<div class="sy-box">
+<!----------主体--------->
+<div class="wrapper">
+    <div class="concept1">
+        <ul class="concept-wrap1 clearfix">
+            <li class="con-item1">
+                <div class="sfgl-jz">
+                    <img src="../../../../img/book/sfgl-jz-04.png" alt="书籍简介" />
+                </div>
+                <div class="con-box1 box-sizing">
+                    <div class="sx-intro">
+                        <h3>《最真实的汉朝》简介</h3>
+                        <p>巍巍四百年，金戈铁马在此驻足；茫茫人心在此怅惘；时代发展在此定格……无论生命的烈火，还是自然的造化，都因大汉王朝而轻轻叹惋。最真实的时代，最让人感慨的时代，最悲喜交加的时代，将大汉王朝装点得无比辉煌。</p>
+                        <p>历史的星空中，有无数美丽的故事，有无数的无名英雄和无声大爱。要看到它们，了解它们，就必须了解最真实的历史。了解汉朝，了解刘氏江山，了解萧何、张良、东方朔等人，就必须了解最真实的汉朝。</p>
+                    </div>
+                    <div class="img">
+                        <img src="img/zuizhenshi.jpg" alt="" />
+                    </div>
+                </div>
+            </li>
+            <li class="con-item1">
+                <div class="sfgl-jz">
+                    <img src="../../../../img/book/sfgl-jz-04.png" alt="创作背景" />
+                </div>
+                <div class="con-box1 box-sizing">
+                    <div class="sx-intro name-list sx-padding box-sizing">
+                        <h3>创作背景</h3>
+                        <p>历史的星空中，有无数美丽的故事，有无数的无名英雄和无声大爱。要看到它们，了解它们，就必须了解最真实的历史。了解汉朝，了解刘氏江山，了解萧何、张良、东方朔等人，就必须了解最真实的汉朝。 本作品立足于“真实”二字上，将中国历史上最强大的朝代——汉王朝最本能、最吸引人的一面展现在读者面前。内容与普通市场书迥异，即普通市场书要么单一地进行历史陈述，要么只作历史事件和人物上的评论，让读者产生单一的历史认识。 本作品以说故事、讲道理的方式，将汉朝“最真实”的历史和“最本能”的变化展现在读者面前。以历史的方式将中国人社会和文化的最强一面表现出来，让越来越多的人认识汉朝，认识一个“最真实”的中国历史。</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con-item1">
+                <div class="sfgl-jz">
+                    <img src="../../../../img/book/sfgl-jz-04.png" alt="相关推荐" />
+                </div>
+                <div class="con-box1 box-sizing">
+                    <div class="sx-intro ">
+                        <h3>相关推荐</h3>
+                        <div class="imglist">
+                            <img src="img/dahan1.jpg" alt="" />
+                        </div>
+                        <h4>[大汉雄风]</h4>
+                        <div class="imglist">
+                            <img src="img/dahan2.jpg" alt="" />
+                        </div>
+                        <h4>[大汉王朝之刘家天下]</h4>
+                        <div class="imglist">
+                            <img src="img/hanshu.png" alt="" />
+                        </div>
+                        <h4>[汉书]</h4>
+                    </div>
+
+                </div>
+                <div class="sfgl-jz-right">
+                    <img src="../../../../img/book/sfgl-jz-04.png" alt="/" />
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    @Untitle1 |（马龙、马林涛、王安澜、马韵佳、吴朝）| ©计算机学院
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //导航
+        $(".com-nav-list").mouseenter(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideDown();
+        }).mouseleave(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideUp();
+        });
+        $(".com-nav-list").click(function(){
+            $(this).addClass("current-nav").siblings().removeClass("current-nav");
+        });
+        //卷轴动效
+        $(".concept-wrap1 .con-item1").eq(0).stop(false,true).animate({width:"890px"},1000).siblings().stop(false,true).animate({width:"75px"},1000);
+        $(".concept-wrap1 .con-item1").mouseenter(function(){
+            var n=$(this).index();
+            $(this).stop(false,true).animate({width:"890px"},500).siblings().stop(false,true).animate({width:"75px"},500);
+            if(n==2){
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).fadeIn(200);
+            }else{
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).delay(350).fadeOut();
+            }
+        });
+    });
+</script>

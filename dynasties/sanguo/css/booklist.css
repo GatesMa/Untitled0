@@ -1,0 +1,84 @@
+/*书籍列表*/
+.index-body{ background:url(../../../img/book/index-body-bg.png) repeat-x; padding:30px 20px 20px 20px; width:960px; margin:0 auto;}
+.index-body .left{ width:695px; overflow:hidden}
+.index-body .right{ width:254px; overflow:hidden}
+
+/* 首页最新资讯 */
+.index-body .zxzx{ width:434px;}
+.index-body .zxzx ul li a{ line-height:24px;}
+/* 最新作品图片滚动 */
+.index-body .zp-gd{ height:120px; padding:10px; overflow:hidden; clear:both;   }
+.index-body .zp-gd ul{ overflow:hidden;}
+.index-body .zp-gd ul li{ width:140px; float:left; margin:0 15px;/*IE6*/_margin:0 10px;  display:inline; }
+.index-body .zp-gd ul li img{ width:140px; height:100px; padding:2px ; border:1px solid #CCC}
+.index-body .zp-gd ul li p{ text-align:center}
+.index-body .zp-gd ul li a:hover{ color:#F00; text-decoration:none;-webkit-transition:.25s linear .1s;transition:.25s linear .1s;-moz-transition: .25s linear .1s;}
+.index-body .zp-gd ul li img:hover{ border:1px solid #E13939;-webkit-transition:.25s linear .1s;transition:.25s linear .1s;-moz-transition: .25s linear .1s;}
+.index-body .shxx{ width:238px;}
+.index-body #txtMarqueeTop{ padding:12px;}
+.index-body #txtMarqueeTop ul li{ line-height:33px;}
+.index-body #txtMarqueeTop ul li span{ float:right; color:#999}
+/* 首页精彩作品 */
+.index-body .jczp{ width:434px; overflow:hidden}
+.index-body .jczp ul{ width:450px; padding:10px 0}
+.index-body .jczp ul li{ float:left; margin-right:5px;}
+.index-body .jczp ul li img{ width:135px; height:170px; padding:2px; border:1px solid #CCC}
+/* 首页右侧 */
+.index-body .right div.neirong{ text-indent:25px; line-height:25px;}
+.sidebar{ width:254px;}
+.sidebar .neirong{ padding:0 15px;}
+.sidebar .jiantou li a{ line-height:100px;}
+
+
+.title1{ height:40px; line-height:38px; background:url(../../../img/book/head-bg.gif) repeat-x 0 100% #FFF;}
+.title1 span{ height:38px; background:url(../../../img/book/title-bg.jpg) no-repeat left center; display:block; color:#E13939; font-weight:bold; padding:0 20px 0 40px;font-size:13px; border-bottom:2px solid #CE0609}
+.title1 a.more{height:38px; background:url(../../../img/book/more.jpg) no-repeat center center; display:block; width:73px; text-align:center;color:#FFF}
+.title1 a.more:hover{ text-decoration: none; cursor:pointer}
+
+.title2{ height:40px; line-height:38px; background:url(../../../img/book/head-bg.gif) repeat-x 0 100% #FFF;}
+.title2 span{ height:38px; background:url(../../../img/book/title-bg.jpg) no-repeat left center; display:block; color:#E446A0; font-weight:bold; padding:0 20px 0 40px;font-size:13px; border-bottom:2px solid #DE4C9F}
+.title2 a.more{height:38px; background:url(../../../img/book/more.jpg) no-repeat center center; display:block; width:73px; text-align:center;color:#FFF}
+.title2 a.more:hover{ text-decoration: none; cursor:pointer}
+
+p.tou{ background:url(../../../img/book/sub-head-bg.png) no-repeat; height:24px;}
+p.di{ background:url(../../../img/book/sub-foot-bg.png) no-repeat; height:24px;}
+
+div.neirong{ background:url(../../../img/book/sub-content-bg.gif) repeat-y; padding:10px 15px;}
+
+ul.jiantou{ padding:5px 0 5px 10px;}
+ul.jiantou li{ background:url(../../../img/book/listback.jpg) no-repeat left center}
+ul.jiantou li a{ margin-left:25px; font-size: 20px; font-family: 楷体; font-weight: 300;}
+
+
+.list-right{ background:url(../../../img/book/picback.jpg);width:688px; overflow:hidden}
+/* 图片列表页 */
+.list-right .pic-list{ width:700px; padding:10px 0}
+.list-right .pic-list li{ float:left; padding:5px 15px; margin-top:5px;}
+.list-right .pic-list li:hover{ background:#f4f4f4}
+.list-right .pic-list li img{ width:140px; height:200px; padding:1px; border:1px solid #CCC}
+.list-right .pic-list li img:hover{ border:1px solid #E13939;-webkit-transition:.25s linear .1s;transition:.25s linear .1s;-moz-transition: .25s linear .1s;}
+.list-right .pic-list li span,.list-right ul li p{ font-family:楷体;font-size:18px;display:block; text-align:center; line-height:25px;}
+
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.foot{
+    width: 100%;
+    height: 130px;
+    background: url(../../../img/book/footer-bg.png) no-repeat center center;
+    font-size: 12px;
+    color: #333;
+}
+.foot p{
+    /*border: 1px solid #e1e1e1;*/
+    width: 100%;
+    margin-top: 100px;
+    height: 60px;
+    line-height:60px;
+    font-weight: bolder;
+    padding-top: 30px ;
+    /*padding: 1px 1px 1px 1px*/
+    text-align: center
+}

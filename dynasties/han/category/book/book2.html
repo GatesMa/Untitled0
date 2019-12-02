@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大汉雄风</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head wrapper">
+        <div class=" fl"><a href=""><img class="logo" src="../../../../img/book/logo.png" /></a></div>
+        <div class=" nav fr"><a href="../../../../index.html">首页</a><a href="../../../../about/about.html">关于我们</a><a href="http://gatesma.cn:3030">在线交流</a><a href="../../../../contact/contact.html">联系我们</a></div>
+    </div>
+</header>
+
+<div class="sy-box">
+    <!----------主体--------->
+    <div class="wrapper">
+        <div class="concept1">
+            <ul class="concept-wrap1 clearfix">
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="书籍简介" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro">
+                            <h3>《大汉雄风》简介</h3>
+                            <p>《大汉雄风》是龚勋编著的一本书籍。本书通过大图美绘的全新形式，讲述了两汉时期近百则鲜活生动的小故事，让孩子充分认识和理解中华民族的发展轨迹和伟大智慧。而丰富的历史常识、翔实的背景资料，使故事性与知识性相辅相成，让孩子真正感受一脉相承的华夏文明。</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/dahan1.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="创作背景" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro name-list sx-padding box-sizing">
+                            <h3>创作背景</h3>
+                            <p>汉朝文化统一，科技发达，以儒家文化为代表的汉文化圈正式成立，华夏族自汉朝以后逐渐被称为汉族 ，两汉为华夏文明的延续和挺立千秋做出了巨大贡献。在科技领域亦颇有成就，如蔡伦改进了造纸术，成为中国四大发明之一，张衡发明了地动仪、浑天仪等。</p>
+                            <p>而今中国最大的民族之所以叫汉族（汉人）就得益于中国历史上一个伟大的朝代——汉朝。“犯我强汉者，虽远必诛”成为那个时代的最强音，奠定了汉人的名字，树立了中国前所未有的尊严。以至于几百年之后，西方各国仍然称呼唐朝使臣为汉使，有一个西方小国的国王，看着唐朝使臣哭着说道“不想今日复图汉官威仪”。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="相关推荐" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro ">
+                            <h3>相关推荐</h3>
+                            <div class="imglist">
+                                <img src="img/zuizhenshi.jpg" alt="" />
+                            </div>
+                            <h4>[最真实的汉朝]</h4>
+                            <div class="imglist">
+                                <img src="img/dahan2.jpg" alt="" />
+                            </div>
+                            <h4>[大汉王朝之刘家天下]</h4>
+                            <div class="imglist">
+                                <img src="img/houhan.jpg" alt="" />
+                            </div>
+                            <h4>[后汉书]</h4>
+                        </div>
+
+                    </div>
+                    <div class="sfgl-jz-right">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="/" />
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    @Untitle1 |（马龙、马林涛、王安澜、马韵佳、吴朝）| ©计算机学院
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //导航
+        $(".com-nav-list").mouseenter(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideDown();
+        }).mouseleave(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideUp();
+        });
+        $(".com-nav-list").click(function(){
+            $(this).addClass("current-nav").siblings().removeClass("current-nav");
+        });
+        //卷轴动效
+        $(".concept-wrap1 .con-item1").eq(0).stop(false,true).animate({width:"890px"},1000).siblings().stop(false,true).animate({width:"75px"},1000);
+        $(".concept-wrap1 .con-item1").mouseenter(function(){
+            var n=$(this).index();
+            $(this).stop(false,true).animate({width:"890px"},500).siblings().stop(false,true).animate({width:"75px"},500);
+            if(n==2){
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).fadeIn(200);
+            }else{
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).delay(350).fadeOut();
+            }
+        });
+    });
+</script>

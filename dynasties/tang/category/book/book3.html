@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新唐书</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head wrapper">
+        <div class=" fl"><a href=""><img class="logo" src="../../../../img/book/logo.png" /></a></div>
+        <div class=" nav fr"><a href="../../../../index.html">首页</a><a href="../../../../about/about.html">关于我们</a><a href="http://gatesma.cn:3030">在线交流</a><a href="../../../../contact/contact.html">联系我们</a></div>
+    </div>
+</header>
+
+<div class="sy-box">
+    <!----------主体--------->
+    <div class="wrapper">
+        <div class="concept1">
+            <ul class="concept-wrap1 clearfix">
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="书籍简介" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro">
+                            <h3>《新唐书》简介</h3>
+                            <p>《新唐书》是北宋时期宋祁、欧阳修、范镇、吕夏卿等合撰的一部记载唐朝历史的纪传体史书，“二十四史”之一。</p>
+                            <p>全书共有225卷，其中包括本纪10卷，志50卷，表15卷，列传150卷。《新唐书》前后修史历经17年，于宋仁宗嘉祐五年（公元1060年）完成。</p>
+                            <p>《新唐书》在体例上第一次写出了《兵志》、《选举志》，系统论述唐代府兵等军事制度和科举制度。这是我国正史体裁史书的一大开创，为以后《宋史》等所沿袭。</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/xin.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="创作背景" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro name-list sx-padding box-sizing">
+                            <h3>创作背景</h3>
+                            <p>五代时期就曾有《唐书》（即《旧唐书》）编成，但宋仁宗认为《唐书》“纪次无法，详略失中，文采不明，事实零落”，庆历四年（公元1044年
+                                ）下诏重修 [2]  。至和元年（公元1054年）七月，仁宗催促“速上所修《唐书》”。前后参预其事的有宋敏求、范镇、欧阳修、宋祁、吕夏卿
+                                、梅尧臣，《新唐书》所依据的唐人文献及唐史著作均审慎选择，删除当中的谶纬怪诞内容，裁减旧史本纪十分之七 [3]
+                                。总的说来，〈列传〉部分主要由宋祁负责编写，〈志〉和〈表〉分别由范镇、吕夏卿负责编写。最后在欧阳修主持下完成。
+                                〈本纪〉10卷和〈赞〉〈志〉〈表〉的“序”以及《选举志》《仪卫志》等都出自欧阳修之手。因为〈列传〉部分出自宋祁之手，
+                                而欧阳修只是主持了〈志〉〈表〉的编写，出于谦逊，同时欧阳修认为宋祁是前辈，所以他没有对宋祁所写的列传部分从全书整体
+                                的角度作统一工作，因而《新唐书》存在着记事矛盾、风格体例不同的弊端。所以《新唐书》署“欧阳修、宋祁撰”。其为二十四史之一。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="相关推荐" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro ">
+                            <h3>相关推荐</h3>
+                            <div class="imglist">
+                                <img src="img/jiu.jpg" alt="" />
+                            </div>
+                            <h4>[旧唐书]</h4>
+                            <div class="imglist">
+                                <img src="img/xishuo.jpg" alt="" />
+                            </div>
+                            <h4>[细说大唐]</h4>
+                            <div class="imglist">
+                                <img src="img/zhengshuo.jpg" alt="" />
+                            </div>
+                            <h4>[正说唐朝二十一帝]</h4>
+                        </div>
+
+                    </div>
+                    <div class="sfgl-jz-right">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="/" />
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    @Untitle1 |（马龙、马林涛、王安澜、马韵佳、吴朝）| ©计算机学院
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //导航
+        $(".com-nav-list").mouseenter(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideDown();
+        }).mouseleave(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideUp();
+        });
+        $(".com-nav-list").click(function(){
+            $(this).addClass("current-nav").siblings().removeClass("current-nav");
+        });
+        //卷轴动效
+        $(".concept-wrap1 .con-item1").eq(0).stop(false,true).animate({width:"890px"},1000).siblings().stop(false,true).animate({width:"75px"},1000);
+        $(".concept-wrap1 .con-item1").mouseenter(function(){
+            var n=$(this).index();
+            $(this).stop(false,true).animate({width:"890px"},500).siblings().stop(false,true).animate({width:"75px"},500);
+            if(n==2){
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).fadeIn(200);
+            }else{
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).delay(350).fadeOut();
+            }
+        });
+    });
+</script>

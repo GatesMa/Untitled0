@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大汉王朝之刘家天下</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head wrapper">
+        <div class=" fl"><a href=""><img class="logo" src="../../../../img/book/logo.png" /></a></div>
+        <div class=" nav fr"><a href="../../../../index.html">首页</a><a href="../../../../about/about.html">关于我们</a><a href="http://gatesma.cn:3030">在线交流</a><a href="../../../../contact/contact.html">联系我们</a></div>
+    </div>
+</header>
+
+<div class="sy-box">
+    <!----------主体--------->
+    <div class="wrapper">
+        <div class="concept1">
+            <ul class="concept-wrap1 clearfix">
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="书籍简介" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro">
+                            <h3>《大汉王朝之刘家天下》简介</h3>
+                            <p>《大汉王朝之刘家天下》总结了大汉王朝刘氏家族成功的经验、失败的教训、治世的良策、祸乱的渊薮，再现大汉天子家族的立体全景和大汉王朝的时代风貌。 在中国历代的大一统王朝中，汉朝历时最久。从公元前202年刘邦登基，到公元220汉献帝被废，除去王莽的短暂篡权，大汉王朝统治中国达四百余年，是中国历史上一统江山时间最久的王朝。</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/dahan2.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="创作背景" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro name-list sx-padding box-sizing">
+                            <h3>创作背景</h3>
+                            <p>以刘氏的二十多位皇帝为线索，解读大汉帝国天子家族的兴衰演变与坎坷历程。</p>
+                            <p>在汉朝四百多年的历史进程中先后有二十多位皇帝登上了历史的舞台，外戚争权也始终伴随左右：诸吕之乱、霍光揽权、王莽代汉、窦氏欺主……在刘氏家族与外戚家族的争斗中，宦官逐渐登上了舞台，于是汉亡了。</p>
+                            <p>在中国历代的大一统王朝中，汉朝历时最久。从公元前202年刘邦登基，到公元220汉献帝被废，除去王莽的短暂篡权，大汉王朝统治中国达四百余年，是中国历史上一统江山时间最久的王朝。</p>
+                            <p>大汉王朝是一个充满了光荣与寂寥，童话般华丽的封建王朝，对于今天的中国人，这个伟大的帝国投下的背影与梦想仍值得我们去追忆与品位。“国恒以弱灭，而汉独以强亡！”是什么让血管里流淌着血性与勇武的刘氏家族构建起的汉帝国轰然崩塌？</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="con-item1">
+                    <div class="sfgl-jz">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="相关推荐" />
+                    </div>
+                    <div class="con-box1 box-sizing">
+                        <div class="sx-intro ">
+                            <h3>相关推荐</h3>
+                            <div class="imglist">
+                                <img src="img/zuizhenshi.jpg" alt="" />
+                            </div>
+                            <h4>[最真实的汉朝]</h4>
+                            <div class="imglist">
+                                <img src="img/dahan1.jpg" alt="" />
+                            </div>
+                            <h4>[大汉雄风]</h4>
+                            <div class="imglist">
+                                <img src="img/shiji.png" alt="" />
+                            </div>
+                            <h4>[史记]</h4>
+                        </div>
+
+                    </div>
+                    <div class="sfgl-jz-right">
+                        <img src="../../../../img/book/sfgl-jz-04.png" alt="/" />
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    @Untitle1 |（马龙、马林涛、王安澜、马韵佳、吴朝）| ©计算机学院
+</div>
+
+</body>
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //导航
+        $(".com-nav-list").mouseenter(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideDown();
+        }).mouseleave(function(){
+            $(this).children(".com-sub-box").stop(false,true).slideUp();
+        });
+        $(".com-nav-list").click(function(){
+            $(this).addClass("current-nav").siblings().removeClass("current-nav");
+        });
+        //卷轴动效
+        $(".concept-wrap1 .con-item1").eq(0).stop(false,true).animate({width:"890px"},1000).siblings().stop(false,true).animate({width:"75px"},1000);
+        $(".concept-wrap1 .con-item1").mouseenter(function(){
+            var n=$(this).index();
+            $(this).stop(false,true).animate({width:"890px"},500).siblings().stop(false,true).animate({width:"75px"},500);
+            if(n==2){
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).fadeIn(200);
+            }else{
+                $(".concept-wrap1 .sfgl-jz-right").stop(true,true).delay(350).fadeOut();
+            }
+        });
+    });
+</script>

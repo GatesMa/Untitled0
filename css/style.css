@@ -1,0 +1,358 @@
+
+.backgroundTop{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #672620 url("../img/bg_title1.jpg") no-repeat scroll;
+    background-size: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.backgroundTop:after{
+    content:'';
+    display:block;
+    padding-top:160%;
+}
+.title{
+    margin: 2%;
+    width: 100%;
+    background: transparent url("../img/title_logo.png") no-repeat scroll;
+    background-size: 100%;
+    width: 40vw;
+    height: 20vw;
+    position: absolute;
+    overflow: hidden;
+    z-index: 3;
+    animation: titleIn 2.5s 1;
+}
+.titleCloud{
+    margin: 2%;
+    width: 100%;
+    background: transparent url("../img/title_cloud.png") no-repeat scroll;
+    background-size: 100%;
+    width: 40vw;
+    height: 20vw;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    animation: titleIn 2s 1;
+}
+@keyframes titleIn {
+    0% {
+        transform: translateX(-40vw);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+.indexes{
+    width: 32vw;
+    height: 4vw;
+    margin-top: 21vw;
+    margin-left: 60vw;
+}
+.index{
+    float: left;
+    background: transparent url("../img/index.png") no-repeat scroll;
+    background-size: 100%;
+    width: 8vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+.index:hover{
+    background: transparent url("../img/index_1.png") no-repeat scroll;
+    background-size: 100%;
+}
+.about{
+    float: left;
+    margin-left: 8vw;
+    background: transparent url("../img/about.png") no-repeat scroll;
+    background-size: 100%;
+    width: 8vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+.about:hover{
+    background: transparent url("../img/about_1.png") no-repeat scroll;
+    background-size: 100%;
+}
+.comm{
+    float: left;
+    margin-left: 16vw;
+    background: transparent url("../img/comm.png") no-repeat scroll;
+    background-size: 100%;
+    width: 8vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+.comm:hover{
+    background: transparent url("../img/comm_1.png") no-repeat scroll;
+    background-size: 100%;
+}
+.conn{
+    float: left;
+    margin-left: 24vw;
+    background: transparent url("../img/conn.png") no-repeat scroll;
+    background-size: 100%;
+    width: 8vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 2;
+}
+.conn:hover{
+    background: transparent url("../img/conn_1.png") no-repeat scroll;
+    background-size: 100%;
+}
+.backgroundMid{
+    margin-top: 6.6vw;
+    width: 100%;
+    height: 1000px;
+    background: #672620 url("../img/bg_mid.jpg") no-repeat scroll;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.use_contain {
+    margin: 0px auto;
+    margin-top: 10vw;
+    width: 1200px;
+    height: 500px;
+    /*background: #672620 url("../img/bg_mid.jpg") no-repeat scroll;*/
+    background-size: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.rollPic{
+    /*border: 1px solid white;*/
+    float:left;
+}
+.intro{
+    
+    width: 300px;
+    
+    color: white;
+    text-indent: 2em;
+    font-size: 16px;
+     /*border: 1px solid white;*/
+     margin-top: 30px;
+    float:right;
+    line-height: 1.5em;
+}
+.backgroundBottom{
+    margin-top:65vw;
+    width: 100%;
+    height: 1500px;
+    background: #672620 url("../img/bg_bot.jpg") no-repeat scroll;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.backgroundBottom div:hover {
+    cursor:pointer;
+}
+.c1{
+    position: absolute;
+    float: left;
+    background: transparent url("../img/c1.png") no-repeat scroll;
+    background-size: 100%;
+    /*border: 1px solid #ffffff;*/
+
+}
+.c2{
+    position: absolute;
+    float: left;
+    background: transparent url("../img/c2.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+    /*border: 1px solid #ffffff;*/
+
+}
+.c3{
+    position: absolute;
+    float: left;
+    background: transparent url("../img/c3.png") no-repeat scroll;
+    background-size: 100%;
+    width: 40vw;
+    height: 20vw;
+    /*border: 1px solid #ffffff;*/
+
+}
+.c4{
+    position: absolute;
+    float: left;
+    background: transparent url("../img/c4.png") no-repeat scroll;
+    background-size: 100%;
+}
+.c5{
+    position: absolute;
+    float: left;
+    background: transparent url("../img/c5.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+}
+.c11{
+    position: absolute;
+    float: right;
+    background: transparent url("../img/c11.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+    /*border: 1px solid #ffffff;*/
+
+}
+.c21{
+    position: absolute;
+    float: right;
+    background: transparent url("../img/c21.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+    /*border: 1px solid #ffffff;*/
+}
+.c31{
+    position: absolute;
+    float: right;
+    background: transparent url("../img/c31.png") no-repeat scroll;
+    background-size: 100%;
+    /*border: 1px solid #ffffff;*/
+}
+.c41{
+    position: absolute;
+    float: right;
+    background: transparent url("../img/c41.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+    /*border: 1px solid #ffffff;*/
+    
+}
+.c51{
+    position: absolute;
+    float: right;
+    background: transparent url("../img/c51.png") no-repeat scroll;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+}
+@keyframes float1 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(4vw);
+    }
+}
+@keyframes float2 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(5vw);
+    }
+}
+@keyframes float3 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-9vw);
+    }
+}
+@keyframes float4 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-11vw);
+    }
+}
+@keyframes float5 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-3vw);
+    }
+}
+@keyframes float6 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-2vw);
+    }
+}
+@keyframes float7 {
+    0% {
+        transform: translateX(-1vw);
+    }
+    100% {
+        transform: translateX(2vw);
+    }
+}
+@keyframes float8 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(8vw);
+    }
+}
+@keyframes float9 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(3vw);
+    }
+}
+@keyframes float10 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-4vw);
+    }
+}
+@keyframes float11 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-2vw);
+    }
+}
+@keyframes float12 {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-10vw);
+    }
+}
+
+
+/*---------------页脚--------------*/
+.footer {
+    /*border: 1px solid #e1e1e1;*/
+    width: 100%;
+    margin-top: 100px;
+    height: 60px;
+    line-height:60px;
+    font-weight: bolder;
+    margin: 0px auto;
+    /*padding: 1px 1px 1px 1px*/
+    text-align: center;
+    color: white;
+    background-color: #672620;
+}
+/*---------------页脚--------------*/
